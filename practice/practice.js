@@ -1,3 +1,5 @@
+//anagrams(lives,elvis) => true
+//anagrams(lives,slevf) => false
 function anagrams(str1, str2) {
 
   // Fill this in

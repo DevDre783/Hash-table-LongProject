@@ -56,7 +56,6 @@ describe ('Hash Table', function () {
     hashTable.insert("key27", "value27");
     hashTable.insert("key36", "value36");
     hashTable.insert("key45", "value45");
-
     expect(hashTable.read("key1")).to.equal("value1");
     expect(hashTable.read("key9")).to.equal("value9");
     expect(hashTable.read("key18")).to.equal("value18");
