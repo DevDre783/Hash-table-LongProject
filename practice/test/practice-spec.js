@@ -139,7 +139,6 @@ describe ('Hash Table Practice', function () {
     expect(wordPattern(patternArr.join(""), strings)).to.be.true;
 
     strings[target-1] = 'Elderberry';
-
     expect(wordPattern(patternArr.join(""), strings)).to.be.false;
 
   });

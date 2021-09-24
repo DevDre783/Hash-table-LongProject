@@ -28,18 +28,20 @@ function twoSum(nums, target) {
 }
 
 
-function wordPattern(pattern, strings) {
-
-  // Fill this in
-
-}
 
 
 function wordPattern(pattern, strings) {
-
-  // Fill this in
-
+  let obj = {};
+  for(let i = 0; i < pattern.length; i++){
+    if(!(pattern[i] in obj)  && !(strings[i] in obj)){
+      obj[pattern[i]] = strings[i];
+      obj[strings[i]] = pattern[i];
+    }else if(obj[pattern[i]] !== strings[i] || 
+      obj[strings[i]] !== pattern[i]){
+        return false;
+    }
+  }
+  return true;
 }
-
 
 module.exports = [anagrams, commonElements, duplicate, twoSum, wordPattern];
